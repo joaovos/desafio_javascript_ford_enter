@@ -17,7 +17,15 @@ div#carousel {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    
+   
+    
+    
 }
+
+
 
 div#carousel-title a {
     text-decoration: none;
@@ -29,6 +37,20 @@ div#carousel-title  {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+#prev, #next {
+    background: #1351d8;
+    color: #fff;
+    border: 0px;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 header ul {

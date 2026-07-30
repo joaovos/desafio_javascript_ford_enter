@@ -69,4 +69,44 @@ if (currentItem) {
 
 Carousel._sequence = (Carousel._sequence + 1) % Carousel._size; 
 };
+
+
+static Prev() {
+
+
+
+let carouselDiv = document.getElementById("carousel");
+let titleDiv = document.getElementById("carousel-title");
+
+
+
+
+
+
+
+let currentItem = Carousel._arr[Carousel._sequence];
+
+
+
+
+if (currentItem) {
+    let img = carouselDiv.querySelector("img");
+
+    if (!img) {
+        img = document.createElement("img");
+        carouselDiv.appendChild(img);
+    }
+
+    img.src = currentItem.image;
+    img.alt = currentItem.title;
+    titleDiv.innerHTML = `<a href="${currentItem.url}">${currentItem.title}</a>`;
+}
+
+
+
+
+
+Carousel._sequence = (Carousel._sequence - 1 + Carousel._size) % Carousel._size; 
+};
+
 }
