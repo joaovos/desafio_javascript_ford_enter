@@ -23,7 +23,7 @@ function Post(form) {
             form.elements.namedItem("telefone").value, 
             form.elements.namedItem("contato").value);
            
-    console.log(data);
+            console.log(data);
   
 }
 
